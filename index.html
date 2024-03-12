@@ -8,22 +8,31 @@
     <!-- Add fonts from Adobe fonts or Google Fonts -->
     <title>Submit Recommendations</title>
     <!-- Add a favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
   <!-- Implement a skip to main! -->
-    <!-- <form action="" method="post"> Connect to formspree.io-->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-<div class="radio">
-        <label>Area of Submission:</label><br>
-        <!-- How can the label and button line up and be easily navigatable? -->
-  <input type="radio" id="travel" name="interest" value="travel" required>
-  <label for="travel">Travel</label><br>
-  <input type="radio" id="recipe" name="interest" value="recipe" tabindex="0">
-  <label for="recipe">Recipe</label><br>
-  <input type="radio" id="pets" name="interest" value="pets">
-  <label for="pets">Pets</label><br><br>
+  <header>
+    <a href = "#form" class = "skip">Skip to Main Content</a>
+  </header>
+        <!-- <form action="" method="post"> Connect to formspree.io-->
+  <form id = "main">
+    <fieldset>
+      <legend> Discussion 9 Sample Form</legend>
+      <label for="name">Name:</label>
+      <input type="text" placeholder = "Enter your name" id="name_id" name="name" required><br><br>
+    <div class="radio">
+      <label>Area of Submission:</label><br>
+      <!-- How can the label and button line up and be easily navigatable? -->
+      <input type="radio" id="travel" name="interest" value="travel" required>
+      <label for="travel">Travel</label><br>
+      <input type="radio" id="recipe" name="interest" value="recipe" tabindex="0">
+      <label for="recipe">Recipe</label><br>
+      <input type="radio" id="pets" name="interest" value="pets">
+      <label for="pets">Pets</label><br><br>
+    </fieldset>
 </div>
+</form>
 
 
         <label for="message">Message:</label>
